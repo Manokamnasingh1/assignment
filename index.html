@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Tutor Registration</title>
+    <style>body{  
+        font-family: Calibri, Helvetica, sans-serif;  
+        background-color: lightblue;  
+      }  
+      .container {  
+          padding: 50px;  
+        background-color: white;  
+      }  
+      .center {
+        text-align: center;
+        color: red;
+      }
+     
+    .red {
+      
+      color: red;
+    }
+
+    
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center">Tutor Registration form</h1>
+    <p class ="center">*Required</p>
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="usrname" class="red">Desired Username : </label>
+          <input type="text" id="usrname" name="usrname" required><br>
+      
+          <label for="psw" class="red">Choose Password : </label>
+          <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+          <label for="cars" class="red">select Secret qustion : </label>
+          <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+          </select>
+          <br><br>
+          <label for="usrname" class="red">Answer : </label>
+          <input type="text" id="Answer" name="Answer" required>
+        </form>
+      </div>
+      <p>.</p>
+      <div class="container">
+        <p>Personal Details& Tutor Contact Information</p>  
+        <label class="red">Name :-    </label>
+      <input type="text" name="name" size="15" required /></br>      
+      
+        <label for="cars" class="red">Gender:- </label>
+        <select name="cars" id="cars">
+        <option value="volvo">Male</option>
+        <option value="saab">Female</option>
+        </select>
+        
+        <label for="cars" class="red">Age :</label>
+        <input type="number" min="1" max="100" value="1"><br>
+        <label for="cars" class="red">Country : india </label><br>
+        <label for="cars" class="red">Location :- </label>
+        <select name="cars" id="cars">
+        <option value="volvo" class="red">Select your location</option>
+        <option value="saab" class="red">India</option>
+        <option value="saab">us</option>
+        </select><br>
+        <label class="red">Postal Zip code :- </label>
+        <input type="number" name="number" size="6" required /></br>
+        <label class="red">Area : </label>
+        <input type="Text" name="Text" size="20" required /></br>
+
+        <label class="red">Present Address : </label>
+        <textarea cols="50" rows="1" placeholder=" Address" value="address" required>  
+        </textarea><br>
+        <label class="red"> Contact Number  : </label>
+        <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+        <input type="text" name="phone" placeholder="phone no." size="10"/ required> <br>
+        <label class="red">Email Address : </label>
+        <input type="text" placeholder="Enter Email" name="email" required><br>
+        <label class = "red"   >Upload Photo : </label>
+        <input type="file" id="myFile" name="filename">
+        <p style="color:red;">(.jpg,*.png,*.gif)</p>
+
+        <input  type="submit" value="Submit">
+        
+
+
+    
+      </div>  
+      
+      
+      
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
